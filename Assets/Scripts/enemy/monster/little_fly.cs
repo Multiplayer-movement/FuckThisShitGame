@@ -4,7 +4,7 @@ using System.Collections;
 public class little_fly : MonoBehaviour {
 
     public static little_fly instance;
-    public float HP = 3;//怪物的血量
+    public float HP = 4;//怪物的血量
     Animator ani;
     Transform player_Pos;
     bool IsCanMove = true;
@@ -35,6 +35,7 @@ public class little_fly : MonoBehaviour {
         if ( IsCanMove )
         {
             float dis = Vector2.Distance (transform.position, player_Pos.position);
+            //Lerp寻路
             transform.position = Vector2.Lerp (transform.position, player_Pos.position, Time.deltaTime * ( 1 / dis ) * 2);
         }
     }

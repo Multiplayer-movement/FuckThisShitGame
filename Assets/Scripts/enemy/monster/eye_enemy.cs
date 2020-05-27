@@ -4,7 +4,7 @@ using System.Collections;
 public class eye_enemy : MonoBehaviour {
 
     public static eye_enemy instance;
-    public float HP = 3;//怪物血量
+    public float HP = 4;//怪物血量
     float attack_time;//攻击间隔
     public Animator ani; 
     void Awake()
@@ -20,7 +20,7 @@ public class eye_enemy : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         //血柱旋转
-        transform.Find ("blood").Rotate (Vector3.forward, Time.deltaTime * 20);
+        transform.Find ("blood").Rotate (Vector3.forward, Time.deltaTime * 18);
 
         //Debug.Log (Vector3.Distance (transform.position, GameObject.Find ("Canvas").transform.Find ("Player").Find ("Isaac").transform.position));
         transform.Find ("eye").transform.GetComponent<RectTransform> ( ).localPosition =

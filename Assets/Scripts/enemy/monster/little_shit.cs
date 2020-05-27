@@ -5,7 +5,7 @@ public class little_shit : MonoBehaviour
 {
     bool IsCanMove;
     Vector3 aimPos;//当前目标点
-    public float HP = 3;
+    public float HP = 4;
     Animator ani;
 
     void Awake()
