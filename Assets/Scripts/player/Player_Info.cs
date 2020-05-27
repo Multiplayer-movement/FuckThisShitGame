@@ -8,8 +8,8 @@ public class Player_Info : MonoBehaviour
     public static Player_Info instance;
 
     public static float Shoot_Speed;//玩家的射速
-    public static float Move_Speed = 4;//人物行走速度
-    public static float Player_AllHp = 6;//玩家的总血量上限
+    public static float Move_Speed = 3.5;//人物行走速度
+    public static float Player_AllHp = 7;//玩家的总血量上限
     public static float Player_Hp = 6;//玩家的当前血量
     public static float Player_Attack_num = 1;//玩家的攻击力
     public static bool IsCanMove = true;//人物是否可以行走
@@ -59,7 +59,7 @@ public class Player_Info : MonoBehaviour
 
     void Start()
     {
-        Shoot_Speed = 0.3f;//玩家的射速
+        Shoot_Speed = 0.4f;//玩家的射速
     }
 
     void Update ( )
@@ -115,7 +115,7 @@ public class Player_Info : MonoBehaviour
         {
             if ( Input.GetKeyDown(KeyCode.Space) )
             {
-                Player_Hp = 6;
+                Player_Hp = 7;
                 SceneManager.LoadScene ("Game_Fight");
             }
         }
