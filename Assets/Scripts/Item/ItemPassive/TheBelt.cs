@@ -11,6 +11,6 @@ public class TheBelt : PassiveItem
 
     protected override void Effect()
     {
-        player.Speed += 0.3f;
+        player.Speed += 0.4f;
     }
 }

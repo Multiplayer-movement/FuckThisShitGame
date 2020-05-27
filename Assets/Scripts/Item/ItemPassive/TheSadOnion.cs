@@ -11,6 +11,6 @@ public class TheSadOnion : PassiveItem
 
     protected override void Effect()
     {
-        player.Tears += 0.7f;
+        player.Tears += 0.6f;
     }
 }
